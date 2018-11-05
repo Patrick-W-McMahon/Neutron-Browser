@@ -1,0 +1,31 @@
+html, body,
+#app, #main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+webview {
+    display: inline-flex;
+    position: fixed;
+    top: 40px;
+    bottom: 0;
+    width: 100vw;
+    background: black;
+}
+
+#tabPanel {
+    position: fixed;
+    top: 0;
+    display: inline-flex;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background: red;
+    height: 40px;
+}
+
+#tabPanel > input {
+    width: 90vw;
+}
