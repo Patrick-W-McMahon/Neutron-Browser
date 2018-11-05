@@ -66,3 +66,8 @@ npm run test
 ## Maintainers
 
 - [@patrick-w-mcmahon](https://github.com/Patrick-W-McMahon)
+
+
+## Content Security Policy (CSP)
+
+Content Security Policy set at [Content Security Policy](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
