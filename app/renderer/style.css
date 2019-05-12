@@ -9,23 +9,79 @@ html, body,
 webview {
     display: inline-flex;
     position: fixed;
-    top: 40px;
+    top: 85px;
     bottom: 0;
     width: 100vw;
     background: black;
 }
 
-#tabPanel {
-    position: fixed;
-    top: 0;
+.header-panel {
+    /* position: absolute;
+    top: 0;*/
     display: inline-flex;
     width: 100vw;
     margin: 0;
     padding: 0;
     background: red;
-    height: 40px;
+    height: 35px;
 }
 
-#tabPanel > input {
+.header-panel > input[type=text] {
     width: 90vw;
+}
+
+.main-right-control {
+    position: fixed;
+    display: inline-flex;
+    top: 0;
+    right: 0;
+    display: inline-block;
+    width: 150px;
+    height: 30px;
+    z-index: 999;
+    text-align: right;
+}
+
+.main-right-control button {
+    background: #fcfff4;
+    background: -moz-linear-gradient(top,  #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    background: -webkit-linear-gradient(top,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+    background: linear-gradient(to bottom,  #fcfff4 0%,#dfe5d7 40%,#b3bead 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#b3bead',GradientType=0 );
+    
+    border: 1px solid lightslategrey;
+    border-top: 0;
+}
+
+.main-right-control > button:last-child {
+    background: #ff3019;
+    background: -moz-linear-gradient(top,  #ff3019 0%, #cf0404 100%);
+    background: -webkit-linear-gradient(top,  #ff3019 0%,#cf0404 100%);
+    background: linear-gradient(to bottom,  #ff3019 0%,#cf0404 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff3019', endColorstr='#cf0404',GradientType=0 );    
+    color: white;
+}
+.main-right-control > button:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+.system-tabs {
+    background: #7d7e7d;
+    background: -moz-linear-gradient(top,  #7d7e7d 0%, #0e0e0e 100%);
+    background: -webkit-linear-gradient(top,  #7d7e7d 0%,#0e0e0e 100%);
+    background: linear-gradient(to bottom,  #7d7e7d 0%,#0e0e0e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#7d7e7d', endColorstr='#0e0e0e',GradientType=0 );
+
+}
+
+.system-tabs > .nav-item {
+    color: white;
+}
+
+.system-tabs > .nav-item.active {
+    color: black;
+}
+
+.system-tabs .nav-link {
+    padding: 0.2rem 0.8rem;
 }
